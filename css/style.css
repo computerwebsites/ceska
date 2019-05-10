@@ -1,0 +1,108 @@
+
+body {
+  background-image: url(../images/body.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+
+  background-size: cover;
+}
+.menu {
+  display: grid;
+  grid-template-columns: 1fr 2fr 1fr;
+  grid-gap: 40px;
+  height: 25vh;
+  line-height: 100px;
+  transition: all .7s ease;
+
+}
+a {
+  text-decoration: none;
+
+}
+li:hover {
+  color: black;
+  background-image: linear-gradient(orange, yellow);
+  transition: all .7s ease;
+
+}
+li {
+  list-style: none;
+  color: white;
+  text-align: center;
+  font-size: 20px;
+  border: 2px black solid;
+  background-image: linear-gradient(#CB680B, #8D4604);
+  border-radius: 50px;
+  transition: all .7s ease;
+
+}
+.slideshow {
+  height: 95vh;
+  overflow: hidden;
+  position: relative;
+  display: flex;
+	flex-direction: column;
+	justify-content: center;
+  border-radius: 15px;
+  border: 2px black solid;
+  margin: 20px;
+}
+
+.slide  {
+  background-position: center;
+  background-size: cover;
+  background-image: url(../images/1.jpg);
+  background-repeat: no-repeat;
+  animation: grade10 20s linear infinite 0s;
+}
+.slide2 {
+  background-position: center;
+  background-size: cover;
+  background-image: url(../images/2.jpg);
+  background-repeat: no-repeat;
+  animation: grade10 20s linear infinite 5s;
+}
+.slide3 {
+  background-position: center;
+  background-size: cover;
+  background-image: url(../images/3.jpg);
+  animation: grade10 20s linear infinite 10s;
+}
+.slide4 {
+  background-position: center;
+  background-size: cover;
+  background-image: url(../images/4.jpg);
+  background-repeat: no-repeat;
+  animation: grade10 20s linear infinite 15s;
+}
+.slide {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  opacity:0;
+}
+@keyframes grade10 {
+  0% {
+    opacity: 0;
+    transform: scale(1);
+  }
+  5% {
+    opacity: 1;
+  }
+  25% {
+    opacity: 1;
+  }
+  30% {
+    transform: scale(1.2);
+    opacity: 0;
+  }
+}
+.text {
+  text-align: center;
+  Color: black;
+  font-size: 3rem;
+  background-image: linear-gradient(orange, yellow);
+  margin: 0 35vh;
+  border-radius: 40px;
+  font-family: monospace;
+}
